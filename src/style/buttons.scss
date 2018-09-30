@@ -1,0 +1,20 @@
+.btn {
+    background: #FF5722;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-messenger {
+    background: #0084ff;
+    &:hover {
+        background: #1990ff;
+    }
+}
+
+.btn-large {
+    padding: 15px 25px;
+    font-size: 2em;
+}
