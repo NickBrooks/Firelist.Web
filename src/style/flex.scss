@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+.center-v {
+    align-self: center;
+}
