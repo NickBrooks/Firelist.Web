@@ -1,0 +1,29 @@
+.footer {
+    background: linear-gradient(65deg, $dark-indigo 0, $indigo 100%);
+    color: #fff;
+    a {
+        color: #ddd;
+        &:hover {
+            color: #fff;
+        }
+    }
+    p {
+        line-height: 1em;
+    }
+}
+
+.footer-logo-node {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.footer-node {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+@media(max-width: 900px) {
+    .footer-node {
+        flex-basis: 100%;
+    }
+}

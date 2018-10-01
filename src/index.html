@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#F44336">
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <title>Firelist ChatBot</title>
@@ -17,11 +17,11 @@
     <div class="container full-height">
       <div class="headline-node center-v">
         <h1 class="lead mb-10">A Messenger chatbot for daily errands.</h1>
-        <p class="sub-lead">A minimalist and natural way to stay on top of your daily tasks using the chat service you
+        <p class="sub-lead">A minimalist and natural way to stay on top of your daily tasks using a chat service you
           already use.</p>
         <img src="/static/screenshot.png" class="mt-50" alt="Firelist" />
         <p class="mt-50 mb-50">
-          <a href="https://m.me/FirelistChat" class="btn btn-messenger btn-large"><i class="fab fa-facebook-messenger mr-5"></i>
+          <a href="https://m.me/FirelistChat" target="_blank" class="btn btn-messenger btn-large"><i class="fab fa-facebook-messenger mr-5"></i>
             Get started</a>
         </p>
       </div>
@@ -31,34 +31,90 @@
     </div>
   </div>
 
-  <div class="intro pt-30 pb-30">
+  <div class="intro pt-60 pb-60">
     <div class="container">
-      <div class="typing-node mt-20">
-        <h1 class="lead pink"><span class="txt-type light" data-wait="3000"></span><span class="white">.</span></h1>
+      <div class="typing-node">
+        <h1 class="lead"><span class="txt-type light" data-wait="3000"></span><span class="transparent">.</span></h1>
       </div>
     </div>
     <div class="container">
       <div class="intro-node">
-        <h3 class="teal">Add daily tasks</h3>
+        <h3><i class="fas fa-tasks teal mr-10"></i> Add daily tasks</h3>
         <p>Add tasks to today's list by sending Firelist the task. As you complete each task, simple mark it completed.</p>
-        <p class="pink"><small><strong><em><img class="mr-5" src="/static/logos/transparent-xs.png" /> Pick up pasta
+        <p class="teal"><small><strong><em><img class="mr-5" src="/static/logos/transparent-xs.png" /> Pick up pasta
                 sauce.</em></strong></small></p>
       </div>
       <div class="intro-node">
-        <h3 class="indigo">Get reminder notifications</h3>
-        <p>Reminds are intuitive to set, just state the task and add a date and time and you'll get a notification at
+        <h3><i class="fas fa-bell teal mr-10"></i> Get reminder notifications</h3>
+        <p>Reminders are intuitive to set, just state the task and add a date and time and you'll get a notification at
           that time.</p>
-        <p class="pink"><small><strong><em><img class="mr-5" src="/static/logos/transparent-xs.png" /> Cook pasta
+        <p class="teal"><small><strong><em><img class="mr-5" src="/static/logos/transparent-xs.png" /> Cook pasta
                 tomorrow at
                 6.30pm.</em></strong></small></p>
       </div>
       <div class="intro-node">
-        <h3 class="purple">Up to 365 days</h3>
+        <h3><i class="far fa-calendar-alt teal mr-10"></i> Up to 365 days</h3>
         <p>Each day has it's own Firelist, so you can add tasks and reminders to future lists simply by providing a
           date in the future.</p>
-        <p class="pink"><small><strong><em><img class="mr-5" src="/static/logos/transparent-xs.png" /> Throw out
+        <p class="teal"><small><strong><em><img class="mr-5" src="/static/logos/transparent-xs.png" /> Throw out
                 leftover pasta in 5
                 days.</em></strong></small></p>
+      </div>
+      <div class="typing-node mt-20">
+        <a href="https://m.me/FirelistChat" target="_blank" class="btn btn-messenger"><i class="fab fa-facebook-messenger mr-5"></i>
+          Get started</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="features pt-60 pb-60">
+    <div class="container">
+      <div class="footer-node">
+        <p>Add tasks to today's list by sending Firelist the task. As you complete each task, simple mark it completed.</p>
+        <p class="teal"><small><strong><em><img class="mr-5" src="/static/logos/transparent-xs.png" /> Pick up pasta
+                sauce.</em></strong></small></p>
+      </div>
+      <div class="footer-node">
+        <h3><i class="fas fa-bell teal mr-10"></i> Get reminder notifications</h3>
+        <p>Reminds are intuitive to set, just state the task and add a date and time and you'll get a notification at
+          that time.</p>
+        <p class="teal"><small><strong><em><img class="mr-5" src="/static/logos/transparent-xs.png" /> Cook pasta
+                tomorrow at
+                6.30pm.</em></strong></small></p>
+      </div>
+      <div class="footer-node">
+        <h3><i class="far fa-calendar-alt teal mr-10"></i> Up to 365 days</h3>
+        <p>Each day has it's own Firelist, so you can add tasks and reminders to future lists simply by providing a
+          date in the future.</p>
+        <p class="teal"><small><strong><em><img class="mr-5" src="/static/logos/transparent-xs.png" /> Throw out
+                leftover pasta in 5
+                days.</em></strong></small></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer pt-30 pb-40">
+    <div class="container">
+      <div class="footer-node">
+        <h3><img src="/static/logos/transparent-sm.png" class="mr-5" width="25" /> Firelist <span id="yearString" class="light"></span></h3>
+      </div>
+      <div class="footer-node mt-5">
+        <h3>Get help</h3>
+        <p><a href="https://m.me/FirelistChat" target="_blank" alt="List of commands"><i class="fas fa-code mr-5"></i>
+            Full list of commands</a></p>
+        <p><a href="https://www.facebook.com/FirelistChat" target="_blank" alt="Donate"><i class="fab fa-bitcoin mr-5"></i>
+            Donate Bitcoin</a></p>
+        <p><a href="https://github.com/NickBrooks" target="_blank" alt="Suggestions, feedback and bugs"><i class="far fa-lightbulb mr-5"></i></i>
+            Suggestions/Feedback/Bugs</a></p>
+      </div>
+      <div class="footer-node mt-5">
+        <h3>The socials</h3>
+        <p><a href="https://m.me/FirelistChat" target="_blank" alt="Firelist on Messenger"><i class="fab fa-facebook-messenger mr-5"></i>
+            Messenger</a></p>
+        <p><a href="https://www.facebook.com/FirelistChat" target="_blank" alt="Firelist on Facebook"><i class="fab fa-facebook-square mr-5"></i>
+            Facebook</a></p>
+        <p><a href="https://github.com/NickBrooks/Firelist.Web" target="_blank" alt="Firelist on GitHub"><i class="fab fa-github mr-5"></i>
+            GitHub</a></p>
       </div>
     </div>
   </div>

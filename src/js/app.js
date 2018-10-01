@@ -53,7 +53,6 @@ class TypeWriter {
     }
 }
 
-
 // Init On DOM Load
 document.addEventListener('DOMContentLoaded', init);
 
@@ -66,10 +65,16 @@ function init() {
         'Reply to Trevor in 2 hours',
         'Halloween on October 31st',
         'Pay power bill next month',
+        'Take a study break in 30 mins',
+        'Charity run on September 17th',
         'Social basketball 6pm on Thursday',
         'Book a haircut in 4 weeks',
         'Binge Netflix at 7pm'
     ];
     // Init TypeWriter
     new TypeWriter(txtElement, words, wait);
+
+    // set copyright date
+    var d = new Date();
+    document.getElementById("yearString").innerText = d.getFullYear();
 }
