@@ -1,5 +1,5 @@
 .hero {
-    background: url("/static/bg-fire.png") bottom left 30% no-repeat, linear-gradient(65deg, #F50057 0, #FF7043 100%);
+    background: url("/static/bg-fire.png") bottom left 30% no-repeat, linear-gradient(65deg, $pink 0, $orange 100%);
     color: #fff;
 }
 
@@ -27,8 +27,9 @@
         text-align: center;
         margin-top: 50px;
         img {
-            display: block;
+            display: inline-block;
             max-width: 100%;
+            text-align: center;
         }
     }
     .screen-node {

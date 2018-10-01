@@ -3,6 +3,11 @@ body {
     margin: 0;
     padding: 0;
     color: $black;
+    font-size: 1.1em;
+}
+
+p {
+    line-height: 1.5em;
 }
 
 .light {
@@ -25,7 +30,6 @@ body {
         font-size: 2em;
         margin: 0;
     }
-
     .sub-lead {
         font-size: 1.5em;
         margin: 0;
