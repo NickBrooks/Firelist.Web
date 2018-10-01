@@ -1,3 +1,4 @@
+$white: #fff;
 $black: #424242;
 $pink: #ff0b6b;
 $orange: #FF7043;
@@ -5,6 +6,14 @@ $teal: #01c8a9;
 $indigo: #0077ff;
 $purple: #6941b1;
 $grape: #b01b5d;
+.white {
+    color: $white;
+}
+
+.black {
+    color: $black;
+}
+
 .pink {
     color: $pink;
 }
