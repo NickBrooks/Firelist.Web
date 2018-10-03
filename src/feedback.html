@@ -34,13 +34,15 @@
                 </div>
                 <div class="form-group">
                     <label for="command">Command</label>
-                    <input type="text" class="form-control" id="command" aria-describedby="commandHelp" name="command" />
+                    <input type="text" class="form-control" id="command" aria-describedby="commandHelp" name="command"
+                        maxlength="250" />
                     <small id="commandHelp" class="form-text text-muted">If you're reporting a bug, type the command
                         you are entering.</small>
                 </div>
                 <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea class="form-control" name="description" id="description" rows="3" aria-describedby="descriptionHelp"></textarea>
+                    <textarea class="form-control" name="description" id="description" rows="3" aria-describedby="descriptionHelp"
+                        maxlength="2500"></textarea>
                     <small id="descriptionHelp" class="form-text text-muted">Describe what happens. What you are
                         expecting to happen and what will happen.</small>
                 </div>
