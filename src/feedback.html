@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#F44336">
+    <link rel="icon" type="image/png" sizes="64x64" href="/static/logos/transparent-sm.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/logos/transparent-med.png">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <title>Feedback - Firelist Chatbot</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h2><img src="/static/logos/transparent-sm.png" class="mr-5" width="30" /> Firelist <span id="yearString"
+                    class="light"></span></h2>
+            <p>Feedback, suggestions & bug reports</p>
+            <p>Note: if you know your way around code and GitHub, <a href="https://github.com/NickBrooks/Firelist.Web/issues"><strong>log
+                        an issue here</strong></a>.</p>
+            <hr />
+            <form name="feedback" method="POST" netlify>
+                <div class="form-group">
+                    <label for="type">What are you submitting</label>
+                    <select class="form-control" name="type" id="type">
+                        <option>Feedback</option>
+                        <option>Bug</option>
+                        <option>Suggestion</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="command">Command</label>
+                    <input type="text" class="form-control" id="command" aria-describedby="commandHelp" name="command" />
+                    <small id="commandHelp" class="form-text text-muted">If you're reporting a bug, type the command
+                        you are entering.</small>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" name="description" id="description" rows="3" aria-describedby="descriptionHelp"></textarea>
+                    <small id="descriptionHelp" class="form-text text-muted">Describe what happens. What you are
+                        expecting to happen and what will happen.</small>
+                </div>
+                <div class="form-group">
+                    <label for="screenshot">Screenshot</label>
+                    <input type="file" class="form-control" name="file" id="screenshot" rows="3" />
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        Contact me about the issue
+                    </label>
+                </div>
+                <input type="hidden" id="userId" name="userId" />
+                <div style="text-align:center" class="mt-10">
+                    <button type="submit" class="btn btn-messenger">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

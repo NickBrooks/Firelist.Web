@@ -1,3 +1,5 @@
+import { getParameterByName } from './functions';
+
 // ES6 Class
 class TypeWriter {
     constructor(txtElement, words, wait = 1000) {
@@ -59,22 +61,27 @@ document.addEventListener('DOMContentLoaded', init);
 // Init App
 function init() {
     const txtElement = document.querySelector('.txt-type');
-    const wait = txtElement.getAttribute('data-wait');
-    const words = [
-        'Gym at 6.30am',
-        'Reply to Trevor in 2 hours',
-        'Halloween on October 31st',
-        'Pay power bill next month',
-        'Take a study break in 30 mins',
-        'Charity run on September 17th',
-        'Social basketball 6pm on Thursday',
-        'Book a haircut in 4 weeks',
-        'Binge Netflix at 7pm'
-    ];
-    // Init TypeWriter
-    new TypeWriter(txtElement, words, wait);
+    if (txtElement != null) {
+        const wait = txtElement.getAttribute('data-wait');
+        const words = [
+            'Gym at 6.30am',
+            'Reply to Trevor in 2 hours',
+            'Halloween on October 31st',
+            'Pay power bill next month',
+            'Take a study break in 30 mins',
+            'Charity run on September 17th',
+            'Social basketball 6pm on Thursday',
+            'Book a haircut in 4 weeks',
+            'Binge Netflix at 7pm'
+        ];
+        // Init TypeWriter
+        new TypeWriter(txtElement, words, wait);
 
-    // set copyright date
-    var d = new Date();
-    document.getElementById("yearString").innerText = d.getFullYear();
+        // set copyright date
+        var d = new Date();
+        document.getElementById("yearString").innerText = d.getFullYear();
+    }
+
+    // set the userID
+    document.getElementById("userId").value = getParameterByName("userId");
 }
