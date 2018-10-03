@@ -3,14 +3,40 @@
     padding: 10px;
     border-radius: 5px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
+    &.full {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+    }
 }
 
 .btn-messenger {
     background: #2196F3;
     &:hover {
         background: #42A5F5;
+    }
+}
+
+.btn-teal {
+    background: $teal;
+    &:hover {
+        background: #09d8b9;
+    }
+}
+
+.btn-indigo {
+    background: $indigo;
+    &:hover {
+        background: #147ef7;
+    }
+}
+
+.btn-purple {
+    background: $purple;
+    &:hover {
+        background: #7b53c5;
     }
 }
 

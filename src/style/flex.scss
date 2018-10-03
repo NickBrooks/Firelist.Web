@@ -4,7 +4,7 @@
     padding: 0 20px;
     margin: 0 auto;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .full-height {
@@ -13,4 +13,13 @@
 
 .center-v {
     align-self: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.vertical-box {
+    display: flex;
+    align-items: center;
 }

@@ -1,0 +1,62 @@
+.features {
+    background: linear-gradient(65deg, $dark-teal 0, $teal 100%);
+    color: #fff;
+    a {
+        color: #ddd;
+        &:hover {
+            color: #fff;
+        }
+    }
+    p {
+        line-height: 1em;
+    }
+    .headline-node {
+        flex-basis: 100%;
+    }
+    .pricing-node {
+        display: flex;
+        flex-direction: column;
+        color: $black;
+        background: #fff;
+        margin: 0 .5em;
+        flex: 1;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px 0 rgba(14, 30, 37, .12);
+        padding: 1.6em;
+        ul {
+            list-style-type: none;
+            padding: 1px 0;
+            margin: 0;
+            flex-grow: 1;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .btn {
+            align-self: flex-end;
+        }
+    }
+    .badge {
+        font-weight: bold;
+        color: #fff;
+        padding: .25em .5em;
+        display: inline-table;
+        border-radius: 3px;
+    }
+    .price {
+        color: $faded;
+        font-size: 1.2em;
+        span {
+            color: $black;
+            font-weight: bold;
+            margin-right: 5px;
+            font-size: 1.6em;
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    .pricing-node {
+        flex-basis: 1;
+    }
+}
