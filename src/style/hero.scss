@@ -21,15 +21,15 @@
 @media(max-width: 900px) {
     .hero {
         background: url("/static/bg-fire.png") center center no-repeat, linear-gradient(65deg, #F50057 0, #FF7043 100%);
-    }
-    .headline-node {
-        flex-basis: 100%;
-        text-align: center;
-        margin-top: 50px;
-        img {
-            display: inline-block;
-            max-width: 100%;
+        .headline-node {
+            flex-basis: 100%;
             text-align: center;
+            margin-top: 50px;
+            img {
+                display: inline-block;
+                max-width: 100%;
+                text-align: center;
+            }
         }
     }
     .screen-node {
