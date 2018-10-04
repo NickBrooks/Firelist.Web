@@ -14,7 +14,6 @@
 - Add a task in 2 weeks
 - Add a task in three weeks
 - Add a task next month
-- Add a task in October
 - Add a task on October 21
 - Add a task Oct 21
 - On October 21 add a task
