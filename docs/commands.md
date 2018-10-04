@@ -64,6 +64,8 @@
 - Today
 - Todo
 
+> Simply type the day or date you would like to view.
+
 ### Future lists
 - Tomorrow
 - Wednesday
